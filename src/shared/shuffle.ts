@@ -1,4 +1,3 @@
-/** @tossdocs-ignore */
 export function shuffle<T>(array: T[]): T[] {
   let currentIndex = array.length;
   let randomIndex;
