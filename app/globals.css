@@ -26,6 +26,14 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* .chivo {
+  font-family: var(--font-chivo);
+}
+
+.work_sans {
+  font-family: var(--font-work-sans);
+} */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
