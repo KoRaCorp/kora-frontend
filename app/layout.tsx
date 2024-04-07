@@ -1,20 +1,6 @@
 import type { Metadata } from 'next';
-import { Chivo, Work_Sans } from 'next/font/google';
 import './globals.css';
-
-const chivo_init = Chivo({
-  subsets: ['latin'],
-  // extralight, medium, bold
-  weight: ['200', '500', '700'],
-  variable: '--font-chivo',
-});
-
-const work_sans_init = Work_Sans({
-  subsets: ['latin'],
-  // extralight, medium, extrabold
-  weight: ['200', '500', '800'],
-  variable: '--font-work-sans',
-});
+import { chivo, work_sans } from '@/src/shared/font';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${chivo_init.variable} ${work_sans_init.variable}`}>
-        {children}
-      </body>
+      <body className={`${chivo} ${work_sans}`}>{children}</body>
     </html>
   );
 }
